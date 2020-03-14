@@ -18,9 +18,79 @@ body{
 }
 .container .icon{
   width: 200px;
+  cursor: pointer;
 }
 .container .icon path {
   fill: transparent;
   stroke-width: 10;
   stroke: #31e8ff;
+}
+.container .icon.star path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+}
+.container .icon.star:hover path {
+  animation: animate-star 2s linear forwards;
+}
+@keyframes animate-star {
+  0%{
+    stroke-dashoffset: 0;
+  }
+  40%{
+    stroke-dashoffset: 2000;
+  }
+  80%{
+    stroke-dashoffset: 4000;
+    fill: transparent;
+  }
+  100%{
+    stroke-dashoffset: 4000;
+    fill: #31e8ff;
+  }
+}
+.container .icon.moon path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+}
+.container .icon.moon:hover path {
+  animation: animate-moon 2s linear forwards;
+}
+@keyframes animate-moon {
+  0%{
+    stroke-dashoffset: 0;
+  }
+  40%{
+    stroke-dashoffset: 2000;
+  }
+  80%{
+    stroke-dashoffset: 4000;
+    fill: transparent;
+  }
+  100%{
+    stroke-dashoffset: 4000;
+    fill: #31e8ff;
+  }
+}
+.container .icon.bleach path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+}
+.container .icon.bleach:hover path {
+  animation: animate-bleach 2s linear forwards;
+}
+@keyframes animate-bleach {
+  0%{
+    stroke-dashoffset: 0;
+  }
+  40%{
+    stroke-dashoffset: 2000;
+  }
+  80%{
+    stroke-dashoffset: 4000;
+    fill: transparent;
+  }
+  100%{
+    stroke-dashoffset: 4000;
+    fill: #31e8ff;
+  }
 }
